@@ -1,11 +1,12 @@
 // import { useState } from "react";
 import Dmm from "./components/equipments/dmm";
+import PowerSupply from "./components/equipments/PowerSupply";
 
 function App() {
-
   return (
-    <div className="flex justify-center items-center h-screen">
-        <Dmm />
+    <div className="p-6 flex justify-center gap-6 h-screen">
+      <Dmm />
+      <PowerSupply />
     </div>
   );
 }
