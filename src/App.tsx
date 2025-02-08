@@ -1,6 +1,6 @@
 // import { useState } from "react";
-import Dmm from "./components/equipments/Dmm";
-import PowerSupply from "./components/equipments/PowerSupply";
+import Dmm from "./components/equipments/digital-muiltimeter/Dmm";
+import PowerSupply from "./components/equipments/power-supply/PowerSupply";
 
 function App() {
   return (
