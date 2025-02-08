@@ -6,7 +6,7 @@ interface VoltageButtonProps {
 
 const VoltageButton = ({ voltage, isActive, onClick }: VoltageButtonProps) => {
   const activeClass = isActive
-    ? "active:bg-emerald-300 active:border-emerald-600 transition-colors duration-150"
+    ? "active:bg-amber-200 transition-colors duration-150"
     : "";
   return (
     <button

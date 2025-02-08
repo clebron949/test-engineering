@@ -5,9 +5,9 @@ interface DisplayProps {
 
 export function Display({ value, isDeviceOn }: DisplayProps) {
   return (
-    <div className="bg-gray-800 p-4 rounded-md">
-      <div className={`font-mono text-4xl ${isDeviceOn ? 'text-green-500' : 'text-gray-600'}`}>
-        {isDeviceOn ? value : '----'}
+    <div className="h-[64px] bg-gray-700 p-4 rounded-md flex items-center justify-center">
+      <div className={`font-mono text-4xl ${isDeviceOn ? 'text-white' : 'text-gray-600'}`}>
+        {isDeviceOn ? value : ''}
       </div>
     </div>
   );

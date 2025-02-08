@@ -15,10 +15,10 @@ function Dmm() {
 
   return (
     <main className="">
-      <div className="w-[650px] bg-gray-200 rounded-lg p-5 relative shadow-lg">
-        <p className="text-2xl text-start text-gray-700 font-medium font-mono">Digital Multimeter</p>
-        <div className="grid grid-cols-3">
-          <div className="col-span-2 flex flex-col gap-y-4">
+      <div className="w-[650px] h-[300px] bg-gray-200 rounded-lg p-5 relative shadow-lg">
+        <div className="h-full grid grid-cols-3">
+          <div className="h-full col-span-2 flex flex-col justify-between">
+            <h1 className="text-2xl text-start text-gray-700 font-medium font-mono">Digital Multimeter</h1>
             <Display value={displayValue} isDeviceOn={isDeviceOn} />
             <div className="grid grid-cols-3 gap-x-12 gap-y-6">
               {buttons.map((mode) => (

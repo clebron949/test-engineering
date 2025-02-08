@@ -24,12 +24,12 @@ const PowerSupply = () => {
 
   return (
     <main>
-      <div className="w-96 bg-gray-200 rounded-lg p-5 relative shadow-lg">
-        <h1 className="text-2xl text-center text-gray-700 font-medium font-mono">
+      <div className="w-[400px] h-[300px] bg-gray-200 rounded-lg p-5 relative shadow-lg flex flex-col justify-between">
+        <h1 className="text-xl text-start text-gray-700 font-medium font-mono">
           Voltage Power Supply
         </h1>
         
-        <div className="flex items-center justify-center gap-6 my-4">
+        <div className="flex items-center justify-center gap-6">
           <Display voltage={voltage} isDeviceOn={isDeviceOn} />
           <div>
             <Knob
@@ -56,11 +56,11 @@ const PowerSupply = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 mt-10">
-          <div className="ms-8 col-span-2">
-            <TerminalConnectors />
+        <div className="flex gap-x-3">
+          <div className="flex-grow">
+              <TerminalConnectors />
           </div>
-          <div className="col-span-1 flex items-center justify-end">
+          <div className="flex items-end">
             <OnButton onClick={toggleDevice} />
           </div>
         </div>
