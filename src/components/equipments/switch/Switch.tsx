@@ -1,7 +1,7 @@
 const Switch = () => {
   return (
     <div>
-      <div className="w-96 h-[330px] bg-gray-200 rounded-lg p-5 relative shadow-lg flex flex-col justify-between">
+      <div className="w-96 h-[300px] bg-gray-200 rounded-lg p-5 relative shadow-lg flex flex-col justify-between">
         <p className="text-2xl text-center text-gray-700 font-medium font-mono">
           Switch
         </p>
