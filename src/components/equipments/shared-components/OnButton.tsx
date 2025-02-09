@@ -17,7 +17,7 @@ const OnButton = ({ onClick }: OnButtonProps) => {
   return (
     <button
       onClick={toggleButton}
-      className={`border ${statusClass} rounded-md py-1 px-3 text-black cursor-pointer`}
+      className={`border ${statusClass} rounded-md py-1 px-3 text-black cursor-pointer active:scale-95 transition-transform`}
     >
       ON
     </button>
