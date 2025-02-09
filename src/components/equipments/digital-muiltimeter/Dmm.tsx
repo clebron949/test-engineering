@@ -22,7 +22,7 @@ function Dmm() {
               {buttons.map((mode) => (
                 <button
                   key={mode}
-                  className="border border-gray-600 rounded-md py-1.5 bg-white text-black cursor-pointer"
+                  className="border border-gray-600 rounded-md py-1.5 bg-white text-black cursor-pointer active:scale-95 transition-transform"
                   onClick={() => setMode(mode)}
                   disabled={!isDeviceOn}
                 >
@@ -30,13 +30,13 @@ function Dmm() {
                 </button>
               ))}
               <button
-                className="border border-gray-600 rounded-md py-1.5 bg-white text-black cursor-pointer"
+                className="border border-gray-600 rounded-md py-1.5 bg-white text-black cursor-pointer active:scale-95 transition-transform"
                 disabled={!isDeviceOn}
               >
                 Single
               </button>
               <button
-                className="border border-emerald-600 rounded-md py-1.5 bg-emerald-300 text-gray-800 cursor-pointer"
+                className="border border-emerald-600 rounded-md py-1.5 bg-emerald-300 text-gray-800 cursor-pointer active:scale-95 transition-transform"
                 disabled={!isDeviceOn}
               >
                 Continuous
