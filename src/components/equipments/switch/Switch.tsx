@@ -1,8 +1,9 @@
 import { useSwitch } from "./hooks/useSwitch";
 import OnButton from "../shared-components/OnButton";
+import SwitchButton from "./components/SwitchButton";
 
 const Switch = () => {
-  const { isDeviceOn, toggleDevice } = useSwitch();
+  const { isDeviceOn, toggleDevice, isOpen, toggleOpen } = useSwitch();
 
   return (
     <div>
@@ -12,9 +13,11 @@ const Switch = () => {
         </p>
         <div className="flex items-center justify-between">
           <div className="size-12 bg-white rounded-full border-2 border-gray-500"></div>
-          <button className="border border-gray-600 rounded-md p-8 bg-white text-black cursor-pointer active:bg-gray-200 active:scale-95 transition-transform">
-            Closed
-          </button>
+          <SwitchButton
+            isDeviceOn={isDeviceOn}
+            isOpen={isOpen}
+            onClick={toggleOpen}
+          />
           <div className="size-12 bg-white rounded-full border-2 border-gray-500"></div>
         </div>
         <div className="flex items-center justify-end">
